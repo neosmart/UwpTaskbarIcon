@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("UwpTaskbarIcon")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Set the Windows 10 task bar icon to a number or glyph with this package for UWP/UAP projects.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("NeoSmart Technologies")]
 [assembly: AssemblyProduct("UwpTaskbarIcon")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright © NeoSmart Technologies  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
