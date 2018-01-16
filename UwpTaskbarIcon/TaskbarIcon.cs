@@ -4,7 +4,7 @@ using Windows.UI.Notifications;
 
 namespace NeoSmart.Uwp
 {
-    class TaskBarIcon
+    public static class TaskbarIcon
     {
         public enum BadgeGlyph
         {
