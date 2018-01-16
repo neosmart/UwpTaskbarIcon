@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NeoSmart Technologies")]
 [assembly: AssemblyProduct("UwpTaskbarIcon")]
-[assembly: AssemblyCopyright("Copyright © NeoSmart Technologies  2017")]
+[assembly: AssemblyCopyright("Copyright © NeoSmart Technologies  2017-2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

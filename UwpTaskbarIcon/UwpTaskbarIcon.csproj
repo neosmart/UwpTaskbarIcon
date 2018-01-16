@@ -15,13 +15,15 @@
         <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
         <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Authors>Mahmoud Al-Qudsi</Authors>
+        <Authors>NeoSmart Technologies, Mahmoud Al-Qudsi</Authors>
         <PackageLicenseUrl>https://cdn.rawgit.com/neosmart/UwpTaskbarIcon/4378db84/LICENSE</PackageLicenseUrl>
         <PackageProjectUrl>https://github.com/neosmart/UwpTaskbarIcon</PackageProjectUrl>
         <RepositoryUrl>https://github.com/neosmart/UwpTaskbarIcon</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>uwp, uap, taskbar, icon, neosmart</PackageTags>
-        <PackageReleaseNotes>Initial release on NuGet</PackageReleaseNotes>
+        <PackageReleaseNotes>1.1.0: Fixed access level
+1.0.0: Initial release on NuGet</PackageReleaseNotes>
+        <Version>1.1.0</Version>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(TargetFramework)' == 'uap10.0'">
