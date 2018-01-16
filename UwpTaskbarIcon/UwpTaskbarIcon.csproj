@@ -1,49 +1,33 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFrameworks>uap10.0</TargetFrameworks>
-        <AssemblyName>UwpTaskbarIcon</AssemblyName>
-        <PackageId>UwpTaskbarIcon</PackageId>
-        <DefaultLanguage>en-US</DefaultLanguage>
-        <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
-        <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
-        <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
-        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-        <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
-        <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-        <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Authors>NeoSmart Technologies, Mahmoud Al-Qudsi</Authors>
-        <PackageLicenseUrl>https://cdn.rawgit.com/neosmart/UwpTaskbarIcon/4378db84/LICENSE</PackageLicenseUrl>
-        <PackageProjectUrl>https://github.com/neosmart/UwpTaskbarIcon</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/neosmart/UwpTaskbarIcon</RepositoryUrl>
-        <RepositoryType>git</RepositoryType>
-        <PackageTags>uwp, uap, taskbar, icon, neosmart</PackageTags>
-        <PackageReleaseNotes>1.1.0: Fixed access level
-1.0.0: Initial release on NuGet</PackageReleaseNotes>
-        <Version>1.1.0</Version>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>NeoSmart.Uwp</RootNamespace>
+    <AssemblyName>NeoSmart.Uwp.TaskbarIcon</AssemblyName>
+    <Description>Set the Windows 10 task bar icon to a number or glyph with this package for UWP/UAP projects.</Description>
+    <Product>UwpTaskbarIcon</Product>
+    <Company>NeoSmart Technologies</Company>
+    <Authors>NeoSmart Technologies, Mahmoud Al-Qudsi</Authors>
+    <Version>1.1.1</Version>
+    <Copyright>NeoSmart Technologies 2017-2018</Copyright>
+    <PackageLicenseUrl>https://cdn.rawgit.com/neosmart/UwpTaskbarIcon/4378db84/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/neosmart/UwpTaskbarIcon</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/neosmart/UwpTaskbarIcon</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>github, Uwp, UAP, Taskbar, icon, taskbaricon, windows10, windows 10</PackageTags>
+    <PackageReleaseNotes>1.1.1: Built against .NET Standard 2.0 to support NuSpec from project</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
 
-    <PropertyGroup Condition="'$(TargetFramework)' == 'uap10.0'">
-        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-        <NugetTargetMoniker>UAP,Version=v10.0</NugetTargetMoniker>
-        <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-        <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
-        <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
-        <TargetFrameworkIdentifier>.NETCore</TargetFrameworkIdentifier>
-        <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
-        <DefineConstants>$(DefineConstants);WINDOWS_UWP</DefineConstants>
-        <LanguageTargets>$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets</LanguageTargets>
-        <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
-    </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.Targets.UniversalWindowsPlatform" Version="5.0.0" />
+  </ItemGroup>
 
-    <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
-        <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform " Version="5.2.2" />
-    </ItemGroup>
-
-    <PropertyGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
-    </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Windows.Foundation.UniversalApiContract">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\References\10.0.16299.0\Windows.Foundation.UniversalApiContract\5.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+  </ItemGroup>
 
 </Project>
