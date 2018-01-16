@@ -8,16 +8,20 @@
     <Product>UWP TaskbarIcon Library</Product>
     <Company>NeoSmart Technologies</Company>
     <Authors>NeoSmart Technologies, Mahmoud Al-Qudsi</Authors>
-    <Version>1.1.1</Version>
+    <Version>1.2.0</Version>
     <Copyright>NeoSmart Technologies 2017-2018</Copyright>
     <PackageLicenseUrl>https://cdn.rawgit.com/neosmart/UwpTaskbarIcon/4378db84/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/neosmart/UwpTaskbarIcon</PackageProjectUrl>
     <RepositoryUrl>https://github.com/neosmart/UwpTaskbarIcon</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>github, Uwp, UAP, Taskbar, icon, taskbaricon, windows10, windows 10</PackageTags>
-    <PackageReleaseNotes>1.1.1: Built against .NET Standard 2.0 to support NuSpec from project</PackageReleaseNotes>
+    <PackageReleaseNotes>1.2.0: Added TaskbarIcon.Clear() method
+1.1.1: Built against .NET Standard 2.0 to support NuSpec from project
+1.1.0: Corrected issues with class accessibility</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>UwpTaskbarIcon</PackageId>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
