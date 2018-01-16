@@ -46,5 +46,10 @@ namespace NeoSmart.Uwp
         {
             SetBadgeValue(number.ToString());
         }
+
+        public static void Clear()
+        {
+            SetBadgeNumber(0);
+        }
     }
 }
